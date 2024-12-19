@@ -5,6 +5,9 @@ from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 from tqdm import tqdm
 
+# Set the seed for PyTorch
+torch.manual_seed(42)
+
 # Define the updated SimpleNN_3L with appropriate input size
 class SimpleNN_3L(nn.Module):
     def __init__(self, input_size, L1, L2, L3):
